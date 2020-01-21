@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-span {
+.bold {
   font-size: 21px;
   font-weight: 600;
 }
@@ -25,6 +25,12 @@ span {
 .header__burger {
   margin-left: 60px;
   margin-right: 100px;
+}
+
+.header__logo {
+  float: right;
+  margin-top: 25px;
+  margin-right: 40px;
 }
 
 .info {
@@ -193,5 +199,45 @@ span {
   height: 30px;
   border-radius: 50%;
   background-color: #ff9d9d;
+}
+
+@media screen and (max-width: 1000px) {
+  .warning {
+    display: none;
+  }
+  .content {
+    right: 5%;
+    left: 5%;
+    width: 90vw;
+  }
+  .info {
+    width: 100%;
+    background-color: #9bb0f4;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header__burger {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header {
+    font-size: 18px;
+    line-height: 5.5;
+  }
+  .content {
+    right: 0;
+    left: 0;
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main_name {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
